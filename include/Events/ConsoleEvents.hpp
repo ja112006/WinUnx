@@ -13,7 +13,7 @@ class ConsoleEvents{
         list <unique_ptr<Commands>> cmdlist;
     public:
         ConsoleEvents();
-        void Waiting();
+        string Waiting();
 
 
 };

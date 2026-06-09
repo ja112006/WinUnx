@@ -14,7 +14,7 @@ ConsoleEvents::ConsoleEvents(){
     ConsoleEvents::cmdlist.push_back(make_unique<CreateFile>());
 };
 
-void ConsoleEvents::Waiting() {
+string ConsoleEvents::Waiting() {
     KeyEvents key;
     cout << '>';
     key.KeyDetect();
@@ -22,4 +22,5 @@ void ConsoleEvents::Waiting() {
         if(cm->getCommand() == key.getCmd())
             cm->Command("");
     }
+    return key.getCmd();
 };
