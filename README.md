@@ -3,7 +3,6 @@
 **A Linux-like terminal experience for Windows**
 
 WinUnx brings familiar Unix/Linux commands to Windows, providing a more unified command-line experience across operating systems.
-*For the moment the project is at phase 1, so it doesn't work for the moment, but feel free to contribute and help, see the issues to help*
 
 ## 🎯 Project Goals
 
@@ -97,7 +96,7 @@ The project aims to:
 
 ## 📝 Roadmap
 
-- [ ] **Phase 1**: Core argument parsing system
+- [x] **Phase 1**: Core argument parsing system
 - [ ] **Phase 2**: Basic file system commands (`ls`, `cat`, `cd`)
 - [ ] **Phase 3**: File manipulation commands (`cp`, `mv`, `rm`)
 - [ ] **Phase 4**: Text processing commands (`grep`, `sort`, `head`, `tail`)
