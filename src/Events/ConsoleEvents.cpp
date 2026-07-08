@@ -1,8 +1,10 @@
 #include <iostream>
-#include "../../include/Events/ConsoleEvents.hpp"
-#include "../../include/Events/KeyEvents.hpp"
-#include "../../include/Commands/Commands.hpp"
-#include "../../include/Commands/FileCommands/CreateFile.hpp"
+#include "Events/ConsoleEvents.hpp"
+#include "Events/KeyEvents.hpp"
+#include "Events/ReadArgs.hpp"
+#include "Commands/Commands.hpp"
+#include "Commands/FileCommands/CreateFile.hpp"
+#include "main.hpp"
 
 #include <string>
 #include <memory>
@@ -14,13 +16,9 @@ ConsoleEvents::ConsoleEvents(){
     ConsoleEvents::cmdlist.push_back(make_unique<CreateFile>());
 };
 
-string ConsoleEvents::Waiting() {
-    KeyEvents key;
+void ConsoleEvents::Waiting() {
     cout << '>';
-    key.KeyDetect();
-    for(auto& cm : ConsoleEvents::cmdlist){
-        if(cm->getCommand() == key.getCmd())
-            cm->Command("");
-    }
-    return key.getCmd();
+    ReadArgs readargs;
+    readargs.Parsing(cmdlist);
+    
 };

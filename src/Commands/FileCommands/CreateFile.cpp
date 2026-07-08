@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include "../../../include/Commands/FileCommands/CreateFile.hpp"
-#include "../../../include/Events/KeyEvents.hpp"
-#include "../../../include/Events/ConsoleEvents.hpp"
-#include "../../../include/main.hpp"
+#include "Commands/FileCommands/CreateFile.hpp"
+#include "Events/KeyEvents.hpp"
+#include "Events/ConsoleEvents.hpp"
+#include "main.hpp"
 
 using namespace std;
 
@@ -12,9 +12,9 @@ CreateFile::CreateFile(){
 };
 
 void CreateFile::Command(string cmd){
-    ofstream Fichier(comd);
+    ofstream Fichier(args);
     Fichier.close();
-    cout << "test" << endl;
+    cout << args << endl;
 };
 
 string CreateFile::getCommand(){

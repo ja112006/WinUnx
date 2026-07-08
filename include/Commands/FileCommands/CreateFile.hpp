@@ -1,7 +1,7 @@
 #ifndef CREATEFILE_HPP
 #define CREATEFILE_HPP
 
-#include "../Commands.hpp"
+#include "Commands/Commands.hpp"
 
 class CreateFile : public Commands{
     private:

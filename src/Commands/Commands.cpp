@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../../include/Commands/Commands.hpp"
+#include "Commands/Commands.hpp"
 
 void Commands::Command(string cmd){
 
