@@ -55,7 +55,8 @@ git clone https://github.com/Kukur091/WinUnx.git
 cd WinUnx
 
 # Compile (adjust compiler as needed)
-(i will add the good command to use later)
+x86_64-w64-mingw32-g++     -std=c++20     -Iinclude     -static     -static-libgcc     -static-libstdc++     main.cpp     src/Commands/Commands.cpp     src/Commands/FileCommands/CreateFile.cpp     src/Events/ConsoleEvents.cpp     src/Events/KeyEvents.cpp     src/Events/ReadArgs.cpp     -o programme.exe
+
 
 # Or use Visual Studio
 # Open WinUnx.cpp in Visual Studio and build
@@ -64,7 +65,10 @@ cd WinUnx
 ## 📖 Usage
 
 ```bash
-compile command (i will add it later when the core will be finished)
+compile command:
+
+x86_64-w64-mingw32-g++     -std=c++20     -Iinclude     -static     -static-libgcc     -static-libstdc++     main.cpp     src/Commands/Commands.cpp     src/Commands/FileCommands/CreateFile.cpp     src/Events/ConsoleEvents.cpp     src/Events/KeyEvents.cpp     src/Events/ReadArgs.cpp     -o programme.exe
+
 ```
 
 ## 🤝 Contributing

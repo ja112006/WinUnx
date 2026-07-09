@@ -9,11 +9,9 @@ using namespace std;
 class KeyEvents{
     private:
         string cmd;
-        string arg;
     public:
         void KeyDetect();
         string getCmd();
-        string getArg();
 };
 
 #endif

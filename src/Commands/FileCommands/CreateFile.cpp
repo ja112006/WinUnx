@@ -12,9 +12,24 @@ CreateFile::CreateFile(){
 };
 
 void CreateFile::Command(string cmd){
-    ofstream Fichier(args);
-    Fichier.close();
-    cout << args << endl;
+    switch(args.size()){
+        case 0: {
+            cout << "Error: You need at least one argument" << endl;
+            break;
+        }
+        case 1: {
+            ofstream Fichier(args[0]);
+            Fichier.close();
+            cout << args[0] << endl;
+            break;
+        }
+        case 2: {
+            break;
+        }
+        default: {
+
+        }
+    }
 };
 
 string CreateFile::getCommand(){

@@ -2,7 +2,8 @@
 #define MAIN_CPP
 #include <iostream>
 #include <string>
+#include <vector>
 
-extern std::string args;
+extern std::vector<std::string> args;
 
 #endif
